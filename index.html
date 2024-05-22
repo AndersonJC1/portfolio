@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn i {
+            margin-left: 8px;
+        }
+        .skill {
+        margin-bottom: 30px;
+        }
+        .skill img {
+        display: block; 
+        margin: 0 auto; 
+        margin-right: 30px;
+        border-radius: 8px;
+        }
+        .skill span {
+        display: block; 
+        margin-top: 10px;  
+        font-weight: bold; 
+        }
+    </style >
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Anderson</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio" data-aos="fade-up">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/1.png" alt="">
+            </div>
+            <h1>Anderson Stuart</h1>
+            <h2>Ingeniero de Sistemas</h2>
+            <div class="redes">
+                <a href="https://github.com/AndersonJC1/Programacion.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anderson-stuart-cuesta-8898bb206/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion" data-aos="zoom-in">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Anderson Stuart. </span>Ingeniero de Sistemas con conocimientos en desarrollo frontend y backend, manejo tecnologías como JavaScript, SQL, MySQL, PHP, WordPress, HTML5, CSS, C++, y React. He adquirido competencias en bases de datos, diseño de software, sistemas operativos y programación de aplicaciones informáticas.</p>
+            <p>Mi pasión por la resolución de problemas y mi compromiso con la excelencia me han permitido destacar en cada proyecto. Estoy en constante aprendizaje y me adapto rápidamente a nuevas tecnologías, lo que me permite ofrecer soluciones innovadoras y eficientes en el desarrollo de aplicaciones web y sistemas de información.</p><br>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono:</strong> 310 684 6173
+                        </li>
+                        <li>
+                            <strong>Email:</strong> stuart72014@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ocupación:</strong> <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses y Canales</h3>
+                    <p>Mis canales de entretenimiento 👆🏻</p>
+                    <div class="contenedor-intereses" data-aos="fade-up">
+                        <a href="https://youtube.com/@playfusion981" class="no-underline" target="_blank">
+                            <div class="interes" style="background-color: #007bff;">
+                                <i class="fa-solid fa-gamepad" style="color: white;"></i>
+                                <span style="color: white;">JUEGOS</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://youtube.com/@lbeatv" class="no-underline" target="_blank">
+                            <div class="interes" style="background-color: #007bff;">
+                                <i class="fa-solid fa-headphones" style="color: white;"></i>
+                                <span style="color: white;">MÚSICA</span>
+                            </div>
+                        </a>
+                        <a href="https://linkfly.to/BeaPlayTV" class="no-underline" target="_blank">
+                            <div class="interes" style="background-color: #007bff;">
+                                <i class="fa-solid fa-mobile" style="color: white;"></i>
+                                <span style="color: white;">REDES</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="Hoja_de_vida_anderson.pdf" download class="no-underline">
+                    <button>
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion" data-aos="zoom-in-up">
+            <h2>Habilidades</h2>
+            <p><span>Además de mis habilidades, me considero una persona entusiasta, comprometida con la excelencia y siempre dispuesta a enfrentar nuevos desafíos.</span></p><br><br>
+            <div class="fila">
+                <!-- Columna de habilidades técnicas -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="skill">
+                                    <span>JavaScript</span>
+                                    <img src="img/js.png" alt="JavaScript" width="80" height="80">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill">
+                                    <span>HTML</span>
+                                    <img src="img/html.png" alt="HTML" width="80" height="80">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill">
+                                    <span>CSS</span>
+                                    <img src="IMG/css.png" alt="CSS" width="80" height="80">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill">
+                                    <span>PHP</span>
+                                    <img src="img/php.png" alt="PHP" width="80" height="80">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill">
+                                    <span>MYSQL</span>
+                                    <img src="img/mysql.png" alt="MySQL" width="80" height="80">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill">
+                                    <span>SQL</span>
+                                    <img src="img/sql.png" alt="SQL" width="80" height="80">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <!-- Columna de habilidades profesionales -->
+                <div class="col">
+                    <h3 text-al>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 90%"></div> 
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 85%"></div> 
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 100%"></div> 
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión de Proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion" data-aos="zoom-in-down">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico en asesoria comercial y operaciones de entidades financieras</h4>
+                        <span class="casa">Centro de Tecnologías Agroindustriales Sena</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p>◉ Adquirí conocimientos en asesoría comercial y operaciones financieras.</p>
+                        <p>◉ Manejo de transacciones bancarias.</p>
+                        <p>◉ Atención al cliente y gestión de productos financieros.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico Profesional en Programación de Aplicaciones Informáticas</h4>
+                        <span class="casa">Corporación de Estudios Tecnológicos del Norte del Valle Cotecnova</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>◉ Adquisición de habilidades en desarrollo de software.</p>
+                        <p>◉ Conocimientos en lenguajes de programación como Java, Python, C++, entre otros.</p>
+                        <p>◉ Diseño y desarrollo de aplicaciones informáticas para diversos dispositivos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnología en Sistemas de Información</h4>
+                        <span class="casa">Corporación de Estudios Tecnológicos del Norte del Valle Cotecnova</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <p>◉ Comprensión de sistemas de información y su aplicación en entornos empresariales.</p>
+                        <p>◉ Gestión de bases de datos y manejo de la información.</p>
+                        <p>◉ Desarrollo de soluciones tecnológicas para optimizar procesos organizacionales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Corporación de Estudios Tecnológicos del Norte del Valle Cotecnova</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <p>◉ Profundización en diseño, implementación y gestión de sistemas de información.</p>
+                        <p>◉ Desarrollo de habilidades para liderar proyectos de tecnología a gran escala.</p>
+                        <p>◉ Análisis de requerimientos, diseño de arquitecturas y desarrollo de software robusto y escalable.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Educación Económica y Financiera para la Formación Básica</h4>
+                        <span class="casa">Centro de Tecnologías Agroindustriales Sena</span>
+                        <span class="fecha">2016</span>
+                        <p>◉ Comprensión de conceptos financieros básicos como ahorro, inversión y presupuesto.</p>
+                        <p>◉ Desarrollo de habilidades para la gestión adecuada de recursos económicos.</p>
+                        <p>◉ Conciencia sobre la importancia de la educación financiera en la vida cotidiana.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Servicio al Cliente en la Organización</h4>
+                        <span class="casa">Centro de Tecnologías Agroindustriales Sena</span>
+                        <span class="fecha">2017</span>
+                        <p>◉ Desarrollo de habilidades para brindar un servicio de calidad al cliente.</p>
+                        <p>◉ Manejo de situaciones difíciles y resolución de problemas.</p>
+                        <p>◉ Comunicación efectiva y construcción de relaciones sólidas con los clientes.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Contabilidad en la Organización</h4>
+                        <span class="casa">Centro de Tecnologías Agroindustriales Sena</span>
+                        <span class="fecha">2018</span>
+                        <p>◉ Conocimientos en principios contables y financieros.</p>
+                        <p>◉ Manejo de registros contables y elaboración de estados financieros.</p>
+                        <p>◉ Interpretación y análisis de información financiera para la toma de decisiones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Contabilidad de Inventarios</h4>
+                        <span class="casa">Centro de Tecnologías Agroindustriales Sena</span>
+                        <span class="fecha">2018</span>
+                        <p>◉ Estudio detallado de métodos contables relacionados con el control de inventarios.</p>
+                        <p>◉ Manejo de sistemas y procedimientos para la valoración y registro de inventarios.</p>
+                        <p>◉ Análisis de costos y gestión eficiente de los recursos de inventario.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Desarrollo de Software para la Gestión Comercial en Proyecto Créditos Plaza</h4>
+                        <span class="casa">Créditos Plaza</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <p>Realicé un proyecto integral en el almacén de electrodomésticos, muebles y enseres 'Créditos Plaza', 
+                            con el objetivo de optimizar los procesos de venta y gestión de información. Durante mi trayectoria 
+                            académica de aproximadamente 4 años, inicié este proyecto realizando una entrevista para la recolección de datos, lo cual me permitió ir desarrollando mockups o prototipos de 
+                            software para el cliente, los cuales fueron evolucionando hasta alcanzar una funcionalidad significativa. 
+                            Posteriormente, diseñé y desarrollé diversos módulos que permitieron la simulación de créditos, la 
+                            gestión de usuarios, el control del inventario de productos, la facilitación del proceso de compra a través 
+                            del carrito de compras, así como la gestión de datos de clientes y ventas. Además, el sistema ofrecía la 
+                            posibilidad de descargar e imprimir facturas y visualizar datos estadísticos sobre las ventas realizadas, 
+                            incluyendo la cantidad de ventas por fecha, la cantidad vendida por producto y el número de facturas 
+                            generadas por vendedor.  
+                            Para garantizar la seguridad y confidencialidad de los datos, el sistema cuenta con un sistema de inicio 
+                            de sesión con roles y permisos. Durante el desarrollo de este proyecto, utilicé el lenguaje unificado de 
+                            modelado UML para comprender la estructura del sistema, así como tecnologías como PHP, HTML, 
+                            JavaScript, CSS y MySQL como sistema gestor de base de datos. Este proyecto fue implementado en el 
+                            municipio de Ansermanuevo, Valle</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> 
+                    <img src="img/img.png" alt="Descripción de la imagen" class="responsive-img" data-aos="fade-up">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <p><span>En mi portafolio, encontrarás ejemplos de mi trabajo y los proyectos en los que he participado, demostrando mi capacidad para crear aplicaciones y sistemas de gestión de información.</span></p><br>
+            <div class="galeria" data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="proyecto">
+                    <img src="img/login.png" alt="">
+                    <div class="overlay">
+                        <h3>Software de Gestión Comercial</h3>
+                        <p>💻</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/eventos.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Gestión de eventos</h3>
+                        <p>👨🏽‍💻</p>
+                    </div>
+                </div>
+                <a href="https://github.com/AndersonJC1/Programacion/blob/master/calculadora.py" target="_blank">
+                <div class="proyecto">
+                    <img src="img/calculadora.png" alt="">
+                    <div class="overlay">
+                        <h3 style="color: white;">Calculadora con gráficos de funciones</h3>
+                        <p>📈</p>
+                    </div>
+                </div>
+                </a>
+                <a href="https://linkfly.to/BeaPlayTV" target="_blank">
+                <div class="proyecto"> 
+                    <img src="img/redes.png" alt="">
+                    <div class="overlay">
+                        <h3 style="color: white;">Contenido multimedia</h3>
+                        <p>▶️</p>
+                    </div>
+                </div>
+            </a>
+                <div class="proyecto">
+                    <img src="img/crud_vehiculo.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Gestión de Vehículos, Clientes y Reservas</h3>
+                        <p>🚗</p>
+                    </div>
+                </div>
+                <a href="https://github.com/AndersonJC1/Programacion/blob/master/game.py" target="_blank">
+                <div class="proyecto">
+                    <img src="img/game1.png" alt="">
+                    <div class="overlay">
+                        <h3 style="color: white;">Juego básico</h3>
+                        <p>🎮</p>
+                    </div>
+                </div>
+                </a>
+                <div class="proyecto">
+                    <img src="img/gestiondenotas.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Estudiantil</h3>
+                        <p>🧑🏽‍🎓</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/operaciones.png" alt="">
+                    <div class="overlay">
+                        <h3>Operaciones Matemáticas</h3>
+                        <p>📟</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/atracciones.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Gestión
+                        Parque de atracciones</h3>
+                        <p>🎢</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("zjmTcw_kMxvJ_qDua"); //User ID de EmailJS
+    })();
+</script>
+
+    <!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <input type="text" id="name" placeholder="Tu Nombre" required>
+                <input type="text" id="phone" placeholder="Número telefónico" required>
+                <input type="email" id="email" placeholder="Dirección de correo" required>
+                <input type="text" id="subject" placeholder="Asunto" required>
+                <textarea id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <button class="btn" onclick="sendEmail()">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+
+            <!-- Mapa -->
+            <div class="col">
+                <img src="img/ubicacion.png" alt="Ubicación" height="350">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>Cartago Valle
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>Tel: 310 684 6173
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>Email: stuart72014@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function sendEmail() {
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        const templateParams = {
+            name: name,
+            phone: phone,
+            email: email,
+            subject: subject,
+            message: message
+        };
+
+        emailjs.send('service_ander', 'template_ander', templateParams)
+            .then(function(response) {
+                alert('Mensaje enviado exitosamente!', response.status, response.text);
+            }, function(error) {
+                alert('Error al enviar el mensaje.', error);
+            });
+    }
+</script>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/AndersonJC1/Programacion.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anderson-stuart-cuesta-8898bb206/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+<!-- Animaciones -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
